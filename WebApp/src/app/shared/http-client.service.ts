@@ -6,7 +6,7 @@ import { retry, catchError } from 'rxjs/operators';
 import { Chuck } from './chuck';
 import { SearchResponse } from './search-response';
 
-const baseUrl = "https://curly-squids-fetch-41-13-0-35.loca.lt/";
+const baseUrl = "http://localhost:42205/";
 
 @Injectable({
   providedIn: 'root'
