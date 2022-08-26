@@ -7,8 +7,10 @@
 3. After Installing DOtnet, clone the the repository and cd into `CoreApi\CoreApi`
 4. From `CoreApi\CoreApi` run cmd `dotnet build CoreApi.csproj`
 5. After a successful build, run cmd `dotnet run`
+6. Use this path for `/swagger/index.html`
 
 >>>Web App
+
 1.To run this you'll need Node.js and Npm installed
 2. From repository root navigate to `WebApp` 
 3. run cmd `npm i` to install required dependencies
