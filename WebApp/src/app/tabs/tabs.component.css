@@ -1,0 +1,67 @@
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: -1px;
+    height: 2.25em;
+  }
+
+  li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: .25em .25em 0;
+    height: 2em;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #FFF;
+  }
+
+  li.active {
+    z-index: 3;
+  }
+
+  a {
+    float: left;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid white;
+    border-bottom: 0;
+    padding: 0 10px;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .active a {
+    background: #FFF;
+    box-shadow: #CCC 0 0 .25em;
+    border: 1px solid #CCC;
+    border-radius: 6px 6px 0px 0px;
+  }
+
+  ::ng-deep .pane {
+    position: relative;
+    z-index: 2;
+    padding: 2em 1em;
+    margin: 0 0.25em;
+    border: 1px solid #CCC;
+    background: #FFF;
+    border-radius: 0;
+    box-shadow: #CCC 0 0 .25em;
+  }
+
+  .width-32pct {
+    width: 32%;
+  }  
+
+  .width-90pct {
+    width: 90%;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+

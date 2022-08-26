@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>Category Info</h1>
+<mat-divider></mat-divider>
+<div mat-dialog-content>
+    <ng-container>
+        <img src="{{ data.icon_url }}" alt="Chuck it lord and Savior">
+    </ng-container>
+    <ng-container *ngIf="data.categories != null" >
+        <h3>Categories</h3>
+        <span>
+            <p *ngFor="let category of data.categories">
+                {{category}} -
+            </p>
+        </span>
+    </ng-container>
+    <p>Visit : <a href="{{data.url}}"></a></p>
+    <p class="margin-rgt-5">Wisdom: {{ data.value }}</p> |
+    <mat-divider></mat-divider>
+<div mat-dialog-actions>
+    <p class="margin-rgt-5">Created: {{ data.created_at }}</p> |
+    <p class="margin-rgt-5">Updated: {{ data.updated_at }}</p> |
+  <button mat-button mat-dialog-close>Close</button>
+</div>

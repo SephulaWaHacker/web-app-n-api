@@ -1,0 +1,16 @@
+.list-style-none {
+    list-style-type: none;
+}
+
+.margin-tp-bt-5 {
+    margin: 5px;
+}
+
+.no-padding-important {
+    padding: 0px !important;
+}
+
+.display-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,10 @@
+<ng-container>
+    <ul class="list-style-none no-padding-important display-grid">
+        <li class="margin-tp-bt-5" *ngFor="let category of categoryList" (click)="showCategory(category)">
+            <mat-card>
+                <mat-card-title>{{ category }}</mat-card-title>
+                <mat-divider></mat-divider>
+            </mat-card>
+        </li>
+    </ul>
+</ng-container>

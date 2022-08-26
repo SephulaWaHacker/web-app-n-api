@@ -1,0 +1,34 @@
+<h1 mat-dialog-title>Additional Info</h1>
+<mat-divider></mat-divider>
+<div mat-dialog-content>
+    <ng-container *ngIf="data.films != null || !data.films">
+        <h3>Films</h3>
+        <a *ngFor="let url of data.films" href="{{url}}">
+            {{url}}
+        </a>
+    </ng-container>
+    <mat-divider></mat-divider>
+    <ng-container *ngIf="data.starships != null || !data.starship">
+        <h3>StarShips</h3>
+        <a *ngFor="let url of data.starships" href="{{url}}">
+            {{url}}
+        </a>
+    </ng-container>
+    <mat-divider></mat-divider>
+    <ng-container *ngIf="data.vehicles != null || !data.vehicles">
+        <h3>Vehicles</h3>
+        <a *ngFor="let url of data.vehicles" href="{{url}}">
+            {{url}}
+        </a>
+    </ng-container>
+    <mat-divider></mat-divider>
+    <ng-container *ngIf="data.species != null || !data.species" >
+        <h3>Species</h3>
+        <a *ngFor="let url of data.species" href="{{url}}">
+            {{url}}
+        </a>
+    </ng-container>
+    <mat-divider></mat-divider>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

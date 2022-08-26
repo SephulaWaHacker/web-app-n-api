@@ -1,0 +1,39 @@
+<ng-container>
+    <ul class="list-style-none no-padding-important display-grid">
+        <li class="margin-tp-bt-5" *ngFor="let person of peopleList">
+            <mat-card>
+                <mat-card-title>{{ person.name }}</mat-card-title>
+                <mat-divider></mat-divider>
+                <mat-card-content>
+                        <p>Skin Color: {{ person.skin_color }}</p>   
+                        <p>Eye Color: {{ person.eye_color }}</p>   
+                        <p>Birth Year: {{ person.birth_year }}</p>   
+                        <p>Mass: {{ person.mass }}kg</p> 
+                        <p>Height: {{ person.height }}cm</p> 
+                        <p>Edited: {{ person.edited }}</p> 
+                        <p>Created: {{ person.created }}</p> 
+                        <p>Gender: {{ person.gender }}</p> 
+                </mat-card-content>
+                <mat-divider></mat-divider>
+                <mat-card-actions>
+                    <button mat-buttun mat-raised-button
+                    (click)="showModal(person.films, person.starships, person.vehicles, person.species)">
+                        Film
+                    </button>
+                    <button mat-buttun mat-raised-button
+                    (click)="showModal(person.films, person.starships, person.vehicles, person.species)">
+                        StarShip
+                    </button>
+                    <button mat-buttun mat-raised-button
+                    (click)="showModal(person.films, person.starships, person.vehicles, person.species)">
+                        Vehicles
+                    </button>
+                    <button mat-buttun mat-raised-button
+                    (click)="showModal(person.films, person.starships, person.vehicles, person.species)">
+                        Species
+                    </button>
+                </mat-card-actions>
+              </mat-card>
+        </li>
+    </ul>
+</ng-container>
